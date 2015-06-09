@@ -1,0 +1,3392 @@
+.model datapath
+
+.inputs a[0] a[1] a[2] a[3] a[4] a[5] a[6] a[7] b[0] b[1] b[2] b[3] b[4] b[5] b[6] b[7] c[0] c[1] c[2] c[3] c[4] c[5] c[6] c[7] d[0] d[1] d[2] d[3] d[4] d[5] d[6] d[7] 
+
+.outputs z[0] z[10] z[11] z[12] z[13] z[14] z[15] z[16] z[17] z[1] z[2] z[3] z[4] z[5] z[6] z[7] z[8] z[9] 
+
+.names Sumabshift[0][0] Sumcd[0] Partial_Products0[0]
+11 1
+
+.names Sumabshift[0][1] Sumcd[0] Partial_Products0[1]
+11 1
+
+.names Sumabshift[0][2] Sumcd[0] Partial_Products0[2]
+11 1
+
+.names Sumabshift[0][3] Sumcd[0] Partial_Products0[3]
+11 1
+
+.names Sumabshift[0][4] Sumcd[0] Partial_Products0[4]
+11 1
+
+.names Sumabshift[0][5] Sumcd[0] Partial_Products0[5]
+11 1
+
+.names Sumabshift[0][6] Sumcd[0] Partial_Products0[6]
+11 1
+
+.names Sumabshift[0][7] Sumcd[0] Partial_Products0[7]
+11 1
+
+.names Sumabshift[0][8] Sumcd[0] Partial_Products0[8]
+11 1
+
+.names ZERO Partial_Products0[9]
+1 1
+
+.names Sumabshift[1][0] Sumcd[1] Partial_Products1[0]
+11 1
+
+.names Sumabshift[1][1] Sumcd[1] Partial_Products1[1]
+11 1
+
+.names Sumabshift[1][2] Sumcd[1] Partial_Products1[2]
+11 1
+
+.names Sumabshift[1][3] Sumcd[1] Partial_Products1[3]
+11 1
+
+.names Sumabshift[1][4] Sumcd[1] Partial_Products1[4]
+11 1
+
+.names Sumabshift[1][5] Sumcd[1] Partial_Products1[5]
+11 1
+
+.names Sumabshift[1][6] Sumcd[1] Partial_Products1[6]
+11 1
+
+.names Sumabshift[1][7] Sumcd[1] Partial_Products1[7]
+11 1
+
+.names Sumabshift[1][8] Sumcd[1] Partial_Products1[8]
+11 1
+
+.names Sumabshift[1][9] Sumcd[1] Partial_Products1[9]
+11 1
+
+.names Sumabshift[2][0] Sumcd[2] Partial_Products2[0]
+11 1
+
+.names Sumabshift[2][10] Sumcd[2] Partial_Products2[10]
+11 1
+
+.names Sumabshift[2][1] Sumcd[2] Partial_Products2[1]
+11 1
+
+.names Sumabshift[2][2] Sumcd[2] Partial_Products2[2]
+11 1
+
+.names Sumabshift[2][3] Sumcd[2] Partial_Products2[3]
+11 1
+
+.names Sumabshift[2][4] Sumcd[2] Partial_Products2[4]
+11 1
+
+.names Sumabshift[2][5] Sumcd[2] Partial_Products2[5]
+11 1
+
+.names Sumabshift[2][6] Sumcd[2] Partial_Products2[6]
+11 1
+
+.names Sumabshift[2][7] Sumcd[2] Partial_Products2[7]
+11 1
+
+.names Sumabshift[2][8] Sumcd[2] Partial_Products2[8]
+11 1
+
+.names Sumabshift[2][9] Sumcd[2] Partial_Products2[9]
+11 1
+
+.names Sumabshift[3][0] Sumcd[3] Partial_Products3[0]
+11 1
+
+.names Sumabshift[3][10] Sumcd[3] Partial_Products3[10]
+11 1
+
+.names Sumabshift[3][11] Sumcd[3] Partial_Products3[11]
+11 1
+
+.names Sumabshift[3][1] Sumcd[3] Partial_Products3[1]
+11 1
+
+.names Sumabshift[3][2] Sumcd[3] Partial_Products3[2]
+11 1
+
+.names Sumabshift[3][3] Sumcd[3] Partial_Products3[3]
+11 1
+
+.names Sumabshift[3][4] Sumcd[3] Partial_Products3[4]
+11 1
+
+.names Sumabshift[3][5] Sumcd[3] Partial_Products3[5]
+11 1
+
+.names Sumabshift[3][6] Sumcd[3] Partial_Products3[6]
+11 1
+
+.names Sumabshift[3][7] Sumcd[3] Partial_Products3[7]
+11 1
+
+.names Sumabshift[3][8] Sumcd[3] Partial_Products3[8]
+11 1
+
+.names Sumabshift[3][9] Sumcd[3] Partial_Products3[9]
+11 1
+
+.names Sumabshift[4][0] Sumcd[4] Partial_Products4[0]
+11 1
+
+.names Sumabshift[4][10] Sumcd[4] Partial_Products4[10]
+11 1
+
+.names Sumabshift[4][11] Sumcd[4] Partial_Products4[11]
+11 1
+
+.names Sumabshift[4][12] Sumcd[4] Partial_Products4[12]
+11 1
+
+.names Sumabshift[4][1] Sumcd[4] Partial_Products4[1]
+11 1
+
+.names Sumabshift[4][2] Sumcd[4] Partial_Products4[2]
+11 1
+
+.names Sumabshift[4][3] Sumcd[4] Partial_Products4[3]
+11 1
+
+.names Sumabshift[4][4] Sumcd[4] Partial_Products4[4]
+11 1
+
+.names Sumabshift[4][5] Sumcd[4] Partial_Products4[5]
+11 1
+
+.names Sumabshift[4][6] Sumcd[4] Partial_Products4[6]
+11 1
+
+.names Sumabshift[4][7] Sumcd[4] Partial_Products4[7]
+11 1
+
+.names Sumabshift[4][8] Sumcd[4] Partial_Products4[8]
+11 1
+
+.names Sumabshift[4][9] Sumcd[4] Partial_Products4[9]
+11 1
+
+.names Sumabshift[5][0] Sumcd[5] Partial_Products5[0]
+11 1
+
+.names Sumabshift[5][10] Sumcd[5] Partial_Products5[10]
+11 1
+
+.names Sumabshift[5][11] Sumcd[5] Partial_Products5[11]
+11 1
+
+.names Sumabshift[5][12] Sumcd[5] Partial_Products5[12]
+11 1
+
+.names Sumabshift[5][13] Sumcd[5] Partial_Products5[13]
+11 1
+
+.names Sumabshift[5][1] Sumcd[5] Partial_Products5[1]
+11 1
+
+.names Sumabshift[5][2] Sumcd[5] Partial_Products5[2]
+11 1
+
+.names Sumabshift[5][3] Sumcd[5] Partial_Products5[3]
+11 1
+
+.names Sumabshift[5][4] Sumcd[5] Partial_Products5[4]
+11 1
+
+.names Sumabshift[5][5] Sumcd[5] Partial_Products5[5]
+11 1
+
+.names Sumabshift[5][6] Sumcd[5] Partial_Products5[6]
+11 1
+
+.names Sumabshift[5][7] Sumcd[5] Partial_Products5[7]
+11 1
+
+.names Sumabshift[5][8] Sumcd[5] Partial_Products5[8]
+11 1
+
+.names Sumabshift[5][9] Sumcd[5] Partial_Products5[9]
+11 1
+
+.names Sumabshift[6][0] Sumcd[6] Partial_Products6[0]
+11 1
+
+.names Sumabshift[6][10] Sumcd[6] Partial_Products6[10]
+11 1
+
+.names Sumabshift[6][11] Sumcd[6] Partial_Products6[11]
+11 1
+
+.names Sumabshift[6][12] Sumcd[6] Partial_Products6[12]
+11 1
+
+.names Sumabshift[6][13] Sumcd[6] Partial_Products6[13]
+11 1
+
+.names Sumabshift[6][14] Sumcd[6] Partial_Products6[14]
+11 1
+
+.names Sumabshift[6][1] Sumcd[6] Partial_Products6[1]
+11 1
+
+.names Sumabshift[6][2] Sumcd[6] Partial_Products6[2]
+11 1
+
+.names Sumabshift[6][3] Sumcd[6] Partial_Products6[3]
+11 1
+
+.names Sumabshift[6][4] Sumcd[6] Partial_Products6[4]
+11 1
+
+.names Sumabshift[6][5] Sumcd[6] Partial_Products6[5]
+11 1
+
+.names Sumabshift[6][6] Sumcd[6] Partial_Products6[6]
+11 1
+
+.names Sumabshift[6][7] Sumcd[6] Partial_Products6[7]
+11 1
+
+.names Sumabshift[6][8] Sumcd[6] Partial_Products6[8]
+11 1
+
+.names Sumabshift[6][9] Sumcd[6] Partial_Products6[9]
+11 1
+
+.names Sumabshift[7][0] Sumcd[7] Partial_Products7[0]
+11 1
+
+.names Sumabshift[7][10] Sumcd[7] Partial_Products7[10]
+11 1
+
+.names Sumabshift[7][11] Sumcd[7] Partial_Products7[11]
+11 1
+
+.names Sumabshift[7][12] Sumcd[7] Partial_Products7[12]
+11 1
+
+.names Sumabshift[7][13] Sumcd[7] Partial_Products7[13]
+11 1
+
+.names Sumabshift[7][14] Sumcd[7] Partial_Products7[14]
+11 1
+
+.names Sumabshift[7][15] Sumcd[7] Partial_Products7[15]
+11 1
+
+.names Sumabshift[7][1] Sumcd[7] Partial_Products7[1]
+11 1
+
+.names Sumabshift[7][2] Sumcd[7] Partial_Products7[2]
+11 1
+
+.names Sumabshift[7][3] Sumcd[7] Partial_Products7[3]
+11 1
+
+.names Sumabshift[7][4] Sumcd[7] Partial_Products7[4]
+11 1
+
+.names Sumabshift[7][5] Sumcd[7] Partial_Products7[5]
+11 1
+
+.names Sumabshift[7][6] Sumcd[7] Partial_Products7[6]
+11 1
+
+.names Sumabshift[7][7] Sumcd[7] Partial_Products7[7]
+11 1
+
+.names Sumabshift[7][8] Sumcd[7] Partial_Products7[8]
+11 1
+
+.names Sumabshift[7][9] Sumcd[7] Partial_Products7[9]
+11 1
+
+.names Sumabshift[8][0] Sumcd[8] Partial_Products8[0]
+11 1
+
+.names Sumabshift[8][10] Sumcd[8] Partial_Products8[10]
+11 1
+
+.names Sumabshift[8][11] Sumcd[8] Partial_Products8[11]
+11 1
+
+.names Sumabshift[8][12] Sumcd[8] Partial_Products8[12]
+11 1
+
+.names Sumabshift[8][13] Sumcd[8] Partial_Products8[13]
+11 1
+
+.names Sumabshift[8][14] Sumcd[8] Partial_Products8[14]
+11 1
+
+.names Sumabshift[8][15] Sumcd[8] Partial_Products8[15]
+11 1
+
+.names Sumabshift[8][16] Sumcd[8] Partial_Products8[16]
+11 1
+
+.names Sumabshift[8][1] Sumcd[8] Partial_Products8[1]
+11 1
+
+.names Sumabshift[8][2] Sumcd[8] Partial_Products8[2]
+11 1
+
+.names Sumabshift[8][3] Sumcd[8] Partial_Products8[3]
+11 1
+
+.names Sumabshift[8][4] Sumcd[8] Partial_Products8[4]
+11 1
+
+.names Sumabshift[8][5] Sumcd[8] Partial_Products8[5]
+11 1
+
+.names Sumabshift[8][6] Sumcd[8] Partial_Products8[6]
+11 1
+
+.names Sumabshift[8][7] Sumcd[8] Partial_Products8[7]
+11 1
+
+.names Sumabshift[8][8] Sumcd[8] Partial_Products8[8]
+11 1
+
+.names Sumabshift[8][9] Sumcd[8] Partial_Products8[9]
+11 1
+
+.names a[0] b[0] SumabAB[0]
+11 1
+
+.names a[1] b[1] SumabAB[1]
+11 1
+
+.names a[2] b[2] SumabAB[2]
+11 1
+
+.names a[3] b[3] SumabAB[3]
+11 1
+
+.names a[4] b[4] SumabAB[4]
+11 1
+
+.names a[5] b[5] SumabAB[5]
+11 1
+
+.names a[6] b[6] SumabAB[6]
+11 1
+
+.names a[7] b[7] SumabAB[7]
+11 1
+
+.names a[0] b[0] SumabAorB[0]
+-1 1
+1- 1
+
+.names a[1] b[1] SumabAorB[1]
+-1 1
+1- 1
+
+.names a[2] b[2] SumabAorB[2]
+-1 1
+1- 1
+
+.names a[3] b[3] SumabAorB[3]
+-1 1
+1- 1
+
+.names a[4] b[4] SumabAorB[4]
+-1 1
+1- 1
+
+.names a[5] b[5] SumabAorB[5]
+-1 1
+1- 1
+
+.names a[6] b[6] SumabAorB[6]
+-1 1
+1- 1
+
+.names a[7] b[7] SumabAorB[7]
+-1 1
+1- 1
+
+.names SumabAB[0] Sumabcin_AorB[0] SumabInternal_Cin[0]
+-1 1
+1- 1
+
+.names SumabAB[1] Sumabcin_AorB[1] SumabInternal_Cin[1]
+-1 1
+1- 1
+
+.names SumabAB[2] Sumabcin_AorB[2] SumabInternal_Cin[2]
+-1 1
+1- 1
+
+.names SumabAB[3] Sumabcin_AorB[3] SumabInternal_Cin[3]
+-1 1
+1- 1
+
+.names SumabAB[4] Sumabcin_AorB[4] SumabInternal_Cin[4]
+-1 1
+1- 1
+
+.names SumabAB[5] Sumabcin_AorB[5] SumabInternal_Cin[5]
+-1 1
+1- 1
+
+.names SumabAB[6] Sumabcin_AorB[6] SumabInternal_Cin[6]
+-1 1
+1- 1
+
+.names a[0] b[0] ZERO Sumab[0]
+001 1
+010 1
+100 1
+111 1
+
+.names a[1] b[1] SumabInternal_Cin[0] Sumab[1]
+001 1
+010 1
+100 1
+111 1
+
+.names a[2] b[2] SumabInternal_Cin[1] Sumab[2]
+001 1
+010 1
+100 1
+111 1
+
+.names a[3] b[3] SumabInternal_Cin[2] Sumab[3]
+001 1
+010 1
+100 1
+111 1
+
+.names a[4] b[4] SumabInternal_Cin[3] Sumab[4]
+001 1
+010 1
+100 1
+111 1
+
+.names a[5] b[5] SumabInternal_Cin[4] Sumab[5]
+001 1
+010 1
+100 1
+111 1
+
+.names a[6] b[6] SumabInternal_Cin[5] Sumab[6]
+001 1
+010 1
+100 1
+111 1
+
+.names a[7] b[7] SumabInternal_Cin[6] Sumab[7]
+001 1
+010 1
+100 1
+111 1
+
+.names SumabAB[7] Sumabcin_AorB[7] Sumab[8]
+-1 1
+1- 1
+
+.names ZERO SumabAorB[0] Sumabcin_AorB[0]
+11 1
+
+.names SumabInternal_Cin[0] SumabAorB[1] Sumabcin_AorB[1]
+11 1
+
+.names SumabInternal_Cin[1] SumabAorB[2] Sumabcin_AorB[2]
+11 1
+
+.names SumabInternal_Cin[2] SumabAorB[3] Sumabcin_AorB[3]
+11 1
+
+.names SumabInternal_Cin[3] SumabAorB[4] Sumabcin_AorB[4]
+11 1
+
+.names SumabInternal_Cin[4] SumabAorB[5] Sumabcin_AorB[5]
+11 1
+
+.names SumabInternal_Cin[5] SumabAorB[6] Sumabcin_AorB[6]
+11 1
+
+.names SumabInternal_Cin[6] SumabAorB[7] Sumabcin_AorB[7]
+11 1
+
+.names Sumab[0] Sumabshift[0][0]
+1 1
+
+.names Sumab[1] Sumabshift[0][1]
+1 1
+
+.names Sumab[2] Sumabshift[0][2]
+1 1
+
+.names Sumab[3] Sumabshift[0][3]
+1 1
+
+.names Sumab[4] Sumabshift[0][4]
+1 1
+
+.names Sumab[5] Sumabshift[0][5]
+1 1
+
+.names Sumab[6] Sumabshift[0][6]
+1 1
+
+.names Sumab[7] Sumabshift[0][7]
+1 1
+
+.names Sumab[8] Sumabshift[0][8]
+1 1
+
+.names ZERO Sumabshift[1][0]
+1 1
+
+.names Sumab[0] Sumabshift[1][1]
+1 1
+
+.names Sumab[1] Sumabshift[1][2]
+1 1
+
+.names Sumab[2] Sumabshift[1][3]
+1 1
+
+.names Sumab[3] Sumabshift[1][4]
+1 1
+
+.names Sumab[4] Sumabshift[1][5]
+1 1
+
+.names Sumab[5] Sumabshift[1][6]
+1 1
+
+.names Sumab[6] Sumabshift[1][7]
+1 1
+
+.names Sumab[7] Sumabshift[1][8]
+1 1
+
+.names Sumab[8] Sumabshift[1][9]
+1 1
+
+.names ZERO Sumabshift[2][0]
+1 1
+
+.names Sumab[8] Sumabshift[2][10]
+1 1
+
+.names ZERO Sumabshift[2][1]
+1 1
+
+.names Sumab[0] Sumabshift[2][2]
+1 1
+
+.names Sumab[1] Sumabshift[2][3]
+1 1
+
+.names Sumab[2] Sumabshift[2][4]
+1 1
+
+.names Sumab[3] Sumabshift[2][5]
+1 1
+
+.names Sumab[4] Sumabshift[2][6]
+1 1
+
+.names Sumab[5] Sumabshift[2][7]
+1 1
+
+.names Sumab[6] Sumabshift[2][8]
+1 1
+
+.names Sumab[7] Sumabshift[2][9]
+1 1
+
+.names ZERO Sumabshift[3][0]
+1 1
+
+.names Sumab[7] Sumabshift[3][10]
+1 1
+
+.names Sumab[8] Sumabshift[3][11]
+1 1
+
+.names ZERO Sumabshift[3][1]
+1 1
+
+.names ZERO Sumabshift[3][2]
+1 1
+
+.names Sumab[0] Sumabshift[3][3]
+1 1
+
+.names Sumab[1] Sumabshift[3][4]
+1 1
+
+.names Sumab[2] Sumabshift[3][5]
+1 1
+
+.names Sumab[3] Sumabshift[3][6]
+1 1
+
+.names Sumab[4] Sumabshift[3][7]
+1 1
+
+.names Sumab[5] Sumabshift[3][8]
+1 1
+
+.names Sumab[6] Sumabshift[3][9]
+1 1
+
+.names ZERO Sumabshift[4][0]
+1 1
+
+.names Sumab[6] Sumabshift[4][10]
+1 1
+
+.names Sumab[7] Sumabshift[4][11]
+1 1
+
+.names Sumab[8] Sumabshift[4][12]
+1 1
+
+.names ZERO Sumabshift[4][1]
+1 1
+
+.names ZERO Sumabshift[4][2]
+1 1
+
+.names ZERO Sumabshift[4][3]
+1 1
+
+.names Sumab[0] Sumabshift[4][4]
+1 1
+
+.names Sumab[1] Sumabshift[4][5]
+1 1
+
+.names Sumab[2] Sumabshift[4][6]
+1 1
+
+.names Sumab[3] Sumabshift[4][7]
+1 1
+
+.names Sumab[4] Sumabshift[4][8]
+1 1
+
+.names Sumab[5] Sumabshift[4][9]
+1 1
+
+.names ZERO Sumabshift[5][0]
+1 1
+
+.names Sumab[5] Sumabshift[5][10]
+1 1
+
+.names Sumab[6] Sumabshift[5][11]
+1 1
+
+.names Sumab[7] Sumabshift[5][12]
+1 1
+
+.names Sumab[8] Sumabshift[5][13]
+1 1
+
+.names ZERO Sumabshift[5][1]
+1 1
+
+.names ZERO Sumabshift[5][2]
+1 1
+
+.names ZERO Sumabshift[5][3]
+1 1
+
+.names ZERO Sumabshift[5][4]
+1 1
+
+.names Sumab[0] Sumabshift[5][5]
+1 1
+
+.names Sumab[1] Sumabshift[5][6]
+1 1
+
+.names Sumab[2] Sumabshift[5][7]
+1 1
+
+.names Sumab[3] Sumabshift[5][8]
+1 1
+
+.names Sumab[4] Sumabshift[5][9]
+1 1
+
+.names ZERO Sumabshift[6][0]
+1 1
+
+.names Sumab[4] Sumabshift[6][10]
+1 1
+
+.names Sumab[5] Sumabshift[6][11]
+1 1
+
+.names Sumab[6] Sumabshift[6][12]
+1 1
+
+.names Sumab[7] Sumabshift[6][13]
+1 1
+
+.names Sumab[8] Sumabshift[6][14]
+1 1
+
+.names ZERO Sumabshift[6][1]
+1 1
+
+.names ZERO Sumabshift[6][2]
+1 1
+
+.names ZERO Sumabshift[6][3]
+1 1
+
+.names ZERO Sumabshift[6][4]
+1 1
+
+.names ZERO Sumabshift[6][5]
+1 1
+
+.names Sumab[0] Sumabshift[6][6]
+1 1
+
+.names Sumab[1] Sumabshift[6][7]
+1 1
+
+.names Sumab[2] Sumabshift[6][8]
+1 1
+
+.names Sumab[3] Sumabshift[6][9]
+1 1
+
+.names ZERO Sumabshift[7][0]
+1 1
+
+.names Sumab[3] Sumabshift[7][10]
+1 1
+
+.names Sumab[4] Sumabshift[7][11]
+1 1
+
+.names Sumab[5] Sumabshift[7][12]
+1 1
+
+.names Sumab[6] Sumabshift[7][13]
+1 1
+
+.names Sumab[7] Sumabshift[7][14]
+1 1
+
+.names Sumab[8] Sumabshift[7][15]
+1 1
+
+.names ZERO Sumabshift[7][1]
+1 1
+
+.names ZERO Sumabshift[7][2]
+1 1
+
+.names ZERO Sumabshift[7][3]
+1 1
+
+.names ZERO Sumabshift[7][4]
+1 1
+
+.names ZERO Sumabshift[7][5]
+1 1
+
+.names ZERO Sumabshift[7][6]
+1 1
+
+.names Sumab[0] Sumabshift[7][7]
+1 1
+
+.names Sumab[1] Sumabshift[7][8]
+1 1
+
+.names Sumab[2] Sumabshift[7][9]
+1 1
+
+.names ZERO Sumabshift[8][0]
+1 1
+
+.names Sumab[2] Sumabshift[8][10]
+1 1
+
+.names Sumab[3] Sumabshift[8][11]
+1 1
+
+.names Sumab[4] Sumabshift[8][12]
+1 1
+
+.names Sumab[5] Sumabshift[8][13]
+1 1
+
+.names Sumab[6] Sumabshift[8][14]
+1 1
+
+.names Sumab[7] Sumabshift[8][15]
+1 1
+
+.names Sumab[8] Sumabshift[8][16]
+1 1
+
+.names ZERO Sumabshift[8][1]
+1 1
+
+.names ZERO Sumabshift[8][2]
+1 1
+
+.names ZERO Sumabshift[8][3]
+1 1
+
+.names ZERO Sumabshift[8][4]
+1 1
+
+.names ZERO Sumabshift[8][5]
+1 1
+
+.names ZERO Sumabshift[8][6]
+1 1
+
+.names ZERO Sumabshift[8][7]
+1 1
+
+.names Sumab[0] Sumabshift[8][8]
+1 1
+
+.names Sumab[1] Sumabshift[8][9]
+1 1
+
+.names c[0] d[0] SumcdAB[0]
+11 1
+
+.names c[1] d[1] SumcdAB[1]
+11 1
+
+.names c[2] d[2] SumcdAB[2]
+11 1
+
+.names c[3] d[3] SumcdAB[3]
+11 1
+
+.names c[4] d[4] SumcdAB[4]
+11 1
+
+.names c[5] d[5] SumcdAB[5]
+11 1
+
+.names c[6] d[6] SumcdAB[6]
+11 1
+
+.names c[7] d[7] SumcdAB[7]
+11 1
+
+.names c[0] d[0] SumcdAorB[0]
+-1 1
+1- 1
+
+.names c[1] d[1] SumcdAorB[1]
+-1 1
+1- 1
+
+.names c[2] d[2] SumcdAorB[2]
+-1 1
+1- 1
+
+.names c[3] d[3] SumcdAorB[3]
+-1 1
+1- 1
+
+.names c[4] d[4] SumcdAorB[4]
+-1 1
+1- 1
+
+.names c[5] d[5] SumcdAorB[5]
+-1 1
+1- 1
+
+.names c[6] d[6] SumcdAorB[6]
+-1 1
+1- 1
+
+.names c[7] d[7] SumcdAorB[7]
+-1 1
+1- 1
+
+.names SumcdAB[0] Sumcdcin_AorB[0] SumcdInternal_Cin[0]
+-1 1
+1- 1
+
+.names SumcdAB[1] Sumcdcin_AorB[1] SumcdInternal_Cin[1]
+-1 1
+1- 1
+
+.names SumcdAB[2] Sumcdcin_AorB[2] SumcdInternal_Cin[2]
+-1 1
+1- 1
+
+.names SumcdAB[3] Sumcdcin_AorB[3] SumcdInternal_Cin[3]
+-1 1
+1- 1
+
+.names SumcdAB[4] Sumcdcin_AorB[4] SumcdInternal_Cin[4]
+-1 1
+1- 1
+
+.names SumcdAB[5] Sumcdcin_AorB[5] SumcdInternal_Cin[5]
+-1 1
+1- 1
+
+.names SumcdAB[6] Sumcdcin_AorB[6] SumcdInternal_Cin[6]
+-1 1
+1- 1
+
+.names c[0] d[0] ZERO Sumcd[0]
+001 1
+010 1
+100 1
+111 1
+
+.names c[1] d[1] SumcdInternal_Cin[0] Sumcd[1]
+001 1
+010 1
+100 1
+111 1
+
+.names c[2] d[2] SumcdInternal_Cin[1] Sumcd[2]
+001 1
+010 1
+100 1
+111 1
+
+.names c[3] d[3] SumcdInternal_Cin[2] Sumcd[3]
+001 1
+010 1
+100 1
+111 1
+
+.names c[4] d[4] SumcdInternal_Cin[3] Sumcd[4]
+001 1
+010 1
+100 1
+111 1
+
+.names c[5] d[5] SumcdInternal_Cin[4] Sumcd[5]
+001 1
+010 1
+100 1
+111 1
+
+.names c[6] d[6] SumcdInternal_Cin[5] Sumcd[6]
+001 1
+010 1
+100 1
+111 1
+
+.names c[7] d[7] SumcdInternal_Cin[6] Sumcd[7]
+001 1
+010 1
+100 1
+111 1
+
+.names SumcdAB[7] Sumcdcin_AorB[7] Sumcd[8]
+-1 1
+1- 1
+
+.names ZERO SumcdAorB[0] Sumcdcin_AorB[0]
+11 1
+
+.names SumcdInternal_Cin[0] SumcdAorB[1] Sumcdcin_AorB[1]
+11 1
+
+.names SumcdInternal_Cin[1] SumcdAorB[2] Sumcdcin_AorB[2]
+11 1
+
+.names SumcdInternal_Cin[2] SumcdAorB[3] Sumcdcin_AorB[3]
+11 1
+
+.names SumcdInternal_Cin[3] SumcdAorB[4] Sumcdcin_AorB[4]
+11 1
+
+.names SumcdInternal_Cin[4] SumcdAorB[5] Sumcdcin_AorB[5]
+11 1
+
+.names SumcdInternal_Cin[5] SumcdAorB[6] Sumcdcin_AorB[6]
+11 1
+
+.names SumcdInternal_Cin[6] SumcdAorB[7] Sumcdcin_AorB[7]
+11 1
+
+.names ZERO
+
+.names sum4294967295[0] Partial_Products0[0] sum0AB[0]
+11 1
+
+.names sum4294967295[1] Partial_Products0[1] sum0AB[1]
+11 1
+
+.names sum4294967295[2] Partial_Products0[2] sum0AB[2]
+11 1
+
+.names sum4294967295[3] Partial_Products0[3] sum0AB[3]
+11 1
+
+.names sum4294967295[4] Partial_Products0[4] sum0AB[4]
+11 1
+
+.names sum4294967295[5] Partial_Products0[5] sum0AB[5]
+11 1
+
+.names sum4294967295[6] Partial_Products0[6] sum0AB[6]
+11 1
+
+.names sum4294967295[7] Partial_Products0[7] sum0AB[7]
+11 1
+
+.names sum4294967295[8] Partial_Products0[8] sum0AB[8]
+11 1
+
+.names sum4294967295[0] Partial_Products0[0] sum0AorB[0]
+-1 1
+1- 1
+
+.names sum4294967295[1] Partial_Products0[1] sum0AorB[1]
+-1 1
+1- 1
+
+.names sum4294967295[2] Partial_Products0[2] sum0AorB[2]
+-1 1
+1- 1
+
+.names sum4294967295[3] Partial_Products0[3] sum0AorB[3]
+-1 1
+1- 1
+
+.names sum4294967295[4] Partial_Products0[4] sum0AorB[4]
+-1 1
+1- 1
+
+.names sum4294967295[5] Partial_Products0[5] sum0AorB[5]
+-1 1
+1- 1
+
+.names sum4294967295[6] Partial_Products0[6] sum0AorB[6]
+-1 1
+1- 1
+
+.names sum4294967295[7] Partial_Products0[7] sum0AorB[7]
+-1 1
+1- 1
+
+.names sum4294967295[8] Partial_Products0[8] sum0AorB[8]
+-1 1
+1- 1
+
+.names sum0AB[0] sum0cin_AorB[0] sum0Internal_Cin[0]
+-1 1
+1- 1
+
+.names sum0AB[1] sum0cin_AorB[1] sum0Internal_Cin[1]
+-1 1
+1- 1
+
+.names sum0AB[2] sum0cin_AorB[2] sum0Internal_Cin[2]
+-1 1
+1- 1
+
+.names sum0AB[3] sum0cin_AorB[3] sum0Internal_Cin[3]
+-1 1
+1- 1
+
+.names sum0AB[4] sum0cin_AorB[4] sum0Internal_Cin[4]
+-1 1
+1- 1
+
+.names sum0AB[5] sum0cin_AorB[5] sum0Internal_Cin[5]
+-1 1
+1- 1
+
+.names sum0AB[6] sum0cin_AorB[6] sum0Internal_Cin[6]
+-1 1
+1- 1
+
+.names sum0AB[7] sum0cin_AorB[7] sum0Internal_Cin[7]
+-1 1
+1- 1
+
+.names sum4294967295[0] Partial_Products0[0] ZERO sum0[0]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4294967295[1] Partial_Products0[1] sum0Internal_Cin[0] sum0[1]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4294967295[2] Partial_Products0[2] sum0Internal_Cin[1] sum0[2]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4294967295[3] Partial_Products0[3] sum0Internal_Cin[2] sum0[3]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4294967295[4] Partial_Products0[4] sum0Internal_Cin[3] sum0[4]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4294967295[5] Partial_Products0[5] sum0Internal_Cin[4] sum0[5]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4294967295[6] Partial_Products0[6] sum0Internal_Cin[5] sum0[6]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4294967295[7] Partial_Products0[7] sum0Internal_Cin[6] sum0[7]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4294967295[8] Partial_Products0[8] sum0Internal_Cin[7] sum0[8]
+001 1
+010 1
+100 1
+111 1
+
+.names sum0AB[8] sum0cin_AorB[8] sum0[9]
+-1 1
+1- 1
+
+.names ZERO sum0AorB[0] sum0cin_AorB[0]
+11 1
+
+.names sum0Internal_Cin[0] sum0AorB[1] sum0cin_AorB[1]
+11 1
+
+.names sum0Internal_Cin[1] sum0AorB[2] sum0cin_AorB[2]
+11 1
+
+.names sum0Internal_Cin[2] sum0AorB[3] sum0cin_AorB[3]
+11 1
+
+.names sum0Internal_Cin[3] sum0AorB[4] sum0cin_AorB[4]
+11 1
+
+.names sum0Internal_Cin[4] sum0AorB[5] sum0cin_AorB[5]
+11 1
+
+.names sum0Internal_Cin[5] sum0AorB[6] sum0cin_AorB[6]
+11 1
+
+.names sum0Internal_Cin[6] sum0AorB[7] sum0cin_AorB[7]
+11 1
+
+.names sum0Internal_Cin[7] sum0AorB[8] sum0cin_AorB[8]
+11 1
+
+.names Partial_Products0[0] Partial_Products1[0] sum1AB[0]
+11 1
+
+.names Partial_Products0[1] Partial_Products1[1] sum1AB[1]
+11 1
+
+.names Partial_Products0[2] Partial_Products1[2] sum1AB[2]
+11 1
+
+.names Partial_Products0[3] Partial_Products1[3] sum1AB[3]
+11 1
+
+.names Partial_Products0[4] Partial_Products1[4] sum1AB[4]
+11 1
+
+.names Partial_Products0[5] Partial_Products1[5] sum1AB[5]
+11 1
+
+.names Partial_Products0[6] Partial_Products1[6] sum1AB[6]
+11 1
+
+.names Partial_Products0[7] Partial_Products1[7] sum1AB[7]
+11 1
+
+.names Partial_Products0[8] Partial_Products1[8] sum1AB[8]
+11 1
+
+.names Partial_Products0[9] Partial_Products1[9] sum1AB[9]
+11 1
+
+.names Partial_Products0[0] Partial_Products1[0] sum1AorB[0]
+-1 1
+1- 1
+
+.names Partial_Products0[1] Partial_Products1[1] sum1AorB[1]
+-1 1
+1- 1
+
+.names Partial_Products0[2] Partial_Products1[2] sum1AorB[2]
+-1 1
+1- 1
+
+.names Partial_Products0[3] Partial_Products1[3] sum1AorB[3]
+-1 1
+1- 1
+
+.names Partial_Products0[4] Partial_Products1[4] sum1AorB[4]
+-1 1
+1- 1
+
+.names Partial_Products0[5] Partial_Products1[5] sum1AorB[5]
+-1 1
+1- 1
+
+.names Partial_Products0[6] Partial_Products1[6] sum1AorB[6]
+-1 1
+1- 1
+
+.names Partial_Products0[7] Partial_Products1[7] sum1AorB[7]
+-1 1
+1- 1
+
+.names Partial_Products0[8] Partial_Products1[8] sum1AorB[8]
+-1 1
+1- 1
+
+.names Partial_Products0[9] Partial_Products1[9] sum1AorB[9]
+-1 1
+1- 1
+
+.names sum1AB[0] sum1cin_AorB[0] sum1Internal_Cin[0]
+-1 1
+1- 1
+
+.names sum1AB[1] sum1cin_AorB[1] sum1Internal_Cin[1]
+-1 1
+1- 1
+
+.names sum1AB[2] sum1cin_AorB[2] sum1Internal_Cin[2]
+-1 1
+1- 1
+
+.names sum1AB[3] sum1cin_AorB[3] sum1Internal_Cin[3]
+-1 1
+1- 1
+
+.names sum1AB[4] sum1cin_AorB[4] sum1Internal_Cin[4]
+-1 1
+1- 1
+
+.names sum1AB[5] sum1cin_AorB[5] sum1Internal_Cin[5]
+-1 1
+1- 1
+
+.names sum1AB[6] sum1cin_AorB[6] sum1Internal_Cin[6]
+-1 1
+1- 1
+
+.names sum1AB[7] sum1cin_AorB[7] sum1Internal_Cin[7]
+-1 1
+1- 1
+
+.names sum1AB[8] sum1cin_AorB[8] sum1Internal_Cin[8]
+-1 1
+1- 1
+
+.names Partial_Products0[0] Partial_Products1[0] ZERO sum1[0]
+001 1
+010 1
+100 1
+111 1
+
+.names sum1AB[9] sum1cin_AorB[9] sum1[10]
+-1 1
+1- 1
+
+.names Partial_Products0[1] Partial_Products1[1] sum1Internal_Cin[0] sum1[1]
+001 1
+010 1
+100 1
+111 1
+
+.names Partial_Products0[2] Partial_Products1[2] sum1Internal_Cin[1] sum1[2]
+001 1
+010 1
+100 1
+111 1
+
+.names Partial_Products0[3] Partial_Products1[3] sum1Internal_Cin[2] sum1[3]
+001 1
+010 1
+100 1
+111 1
+
+.names Partial_Products0[4] Partial_Products1[4] sum1Internal_Cin[3] sum1[4]
+001 1
+010 1
+100 1
+111 1
+
+.names Partial_Products0[5] Partial_Products1[5] sum1Internal_Cin[4] sum1[5]
+001 1
+010 1
+100 1
+111 1
+
+.names Partial_Products0[6] Partial_Products1[6] sum1Internal_Cin[5] sum1[6]
+001 1
+010 1
+100 1
+111 1
+
+.names Partial_Products0[7] Partial_Products1[7] sum1Internal_Cin[6] sum1[7]
+001 1
+010 1
+100 1
+111 1
+
+.names Partial_Products0[8] Partial_Products1[8] sum1Internal_Cin[7] sum1[8]
+001 1
+010 1
+100 1
+111 1
+
+.names Partial_Products0[9] Partial_Products1[9] sum1Internal_Cin[8] sum1[9]
+001 1
+010 1
+100 1
+111 1
+
+.names ZERO sum1AorB[0] sum1cin_AorB[0]
+11 1
+
+.names sum1Internal_Cin[0] sum1AorB[1] sum1cin_AorB[1]
+11 1
+
+.names sum1Internal_Cin[1] sum1AorB[2] sum1cin_AorB[2]
+11 1
+
+.names sum1Internal_Cin[2] sum1AorB[3] sum1cin_AorB[3]
+11 1
+
+.names sum1Internal_Cin[3] sum1AorB[4] sum1cin_AorB[4]
+11 1
+
+.names sum1Internal_Cin[4] sum1AorB[5] sum1cin_AorB[5]
+11 1
+
+.names sum1Internal_Cin[5] sum1AorB[6] sum1cin_AorB[6]
+11 1
+
+.names sum1Internal_Cin[6] sum1AorB[7] sum1cin_AorB[7]
+11 1
+
+.names sum1Internal_Cin[7] sum1AorB[8] sum1cin_AorB[8]
+11 1
+
+.names sum1Internal_Cin[8] sum1AorB[9] sum1cin_AorB[9]
+11 1
+
+.names sum1[0] Partial_Products2[0] sum2AB[0]
+11 1
+
+.names sum1[10] Partial_Products2[10] sum2AB[10]
+11 1
+
+.names sum1[1] Partial_Products2[1] sum2AB[1]
+11 1
+
+.names sum1[2] Partial_Products2[2] sum2AB[2]
+11 1
+
+.names sum1[3] Partial_Products2[3] sum2AB[3]
+11 1
+
+.names sum1[4] Partial_Products2[4] sum2AB[4]
+11 1
+
+.names sum1[5] Partial_Products2[5] sum2AB[5]
+11 1
+
+.names sum1[6] Partial_Products2[6] sum2AB[6]
+11 1
+
+.names sum1[7] Partial_Products2[7] sum2AB[7]
+11 1
+
+.names sum1[8] Partial_Products2[8] sum2AB[8]
+11 1
+
+.names sum1[9] Partial_Products2[9] sum2AB[9]
+11 1
+
+.names sum1[0] Partial_Products2[0] sum2AorB[0]
+-1 1
+1- 1
+
+.names sum1[10] Partial_Products2[10] sum2AorB[10]
+-1 1
+1- 1
+
+.names sum1[1] Partial_Products2[1] sum2AorB[1]
+-1 1
+1- 1
+
+.names sum1[2] Partial_Products2[2] sum2AorB[2]
+-1 1
+1- 1
+
+.names sum1[3] Partial_Products2[3] sum2AorB[3]
+-1 1
+1- 1
+
+.names sum1[4] Partial_Products2[4] sum2AorB[4]
+-1 1
+1- 1
+
+.names sum1[5] Partial_Products2[5] sum2AorB[5]
+-1 1
+1- 1
+
+.names sum1[6] Partial_Products2[6] sum2AorB[6]
+-1 1
+1- 1
+
+.names sum1[7] Partial_Products2[7] sum2AorB[7]
+-1 1
+1- 1
+
+.names sum1[8] Partial_Products2[8] sum2AorB[8]
+-1 1
+1- 1
+
+.names sum1[9] Partial_Products2[9] sum2AorB[9]
+-1 1
+1- 1
+
+.names sum2AB[0] sum2cin_AorB[0] sum2Internal_Cin[0]
+-1 1
+1- 1
+
+.names sum2AB[1] sum2cin_AorB[1] sum2Internal_Cin[1]
+-1 1
+1- 1
+
+.names sum2AB[2] sum2cin_AorB[2] sum2Internal_Cin[2]
+-1 1
+1- 1
+
+.names sum2AB[3] sum2cin_AorB[3] sum2Internal_Cin[3]
+-1 1
+1- 1
+
+.names sum2AB[4] sum2cin_AorB[4] sum2Internal_Cin[4]
+-1 1
+1- 1
+
+.names sum2AB[5] sum2cin_AorB[5] sum2Internal_Cin[5]
+-1 1
+1- 1
+
+.names sum2AB[6] sum2cin_AorB[6] sum2Internal_Cin[6]
+-1 1
+1- 1
+
+.names sum2AB[7] sum2cin_AorB[7] sum2Internal_Cin[7]
+-1 1
+1- 1
+
+.names sum2AB[8] sum2cin_AorB[8] sum2Internal_Cin[8]
+-1 1
+1- 1
+
+.names sum2AB[9] sum2cin_AorB[9] sum2Internal_Cin[9]
+-1 1
+1- 1
+
+.names sum1[0] Partial_Products2[0] ZERO sum2[0]
+001 1
+010 1
+100 1
+111 1
+
+.names sum1[10] Partial_Products2[10] sum2Internal_Cin[9] sum2[10]
+001 1
+010 1
+100 1
+111 1
+
+.names sum2AB[10] sum2cin_AorB[10] sum2[11]
+-1 1
+1- 1
+
+.names sum1[1] Partial_Products2[1] sum2Internal_Cin[0] sum2[1]
+001 1
+010 1
+100 1
+111 1
+
+.names sum1[2] Partial_Products2[2] sum2Internal_Cin[1] sum2[2]
+001 1
+010 1
+100 1
+111 1
+
+.names sum1[3] Partial_Products2[3] sum2Internal_Cin[2] sum2[3]
+001 1
+010 1
+100 1
+111 1
+
+.names sum1[4] Partial_Products2[4] sum2Internal_Cin[3] sum2[4]
+001 1
+010 1
+100 1
+111 1
+
+.names sum1[5] Partial_Products2[5] sum2Internal_Cin[4] sum2[5]
+001 1
+010 1
+100 1
+111 1
+
+.names sum1[6] Partial_Products2[6] sum2Internal_Cin[5] sum2[6]
+001 1
+010 1
+100 1
+111 1
+
+.names sum1[7] Partial_Products2[7] sum2Internal_Cin[6] sum2[7]
+001 1
+010 1
+100 1
+111 1
+
+.names sum1[8] Partial_Products2[8] sum2Internal_Cin[7] sum2[8]
+001 1
+010 1
+100 1
+111 1
+
+.names sum1[9] Partial_Products2[9] sum2Internal_Cin[8] sum2[9]
+001 1
+010 1
+100 1
+111 1
+
+.names ZERO sum2AorB[0] sum2cin_AorB[0]
+11 1
+
+.names sum2Internal_Cin[9] sum2AorB[10] sum2cin_AorB[10]
+11 1
+
+.names sum2Internal_Cin[0] sum2AorB[1] sum2cin_AorB[1]
+11 1
+
+.names sum2Internal_Cin[1] sum2AorB[2] sum2cin_AorB[2]
+11 1
+
+.names sum2Internal_Cin[2] sum2AorB[3] sum2cin_AorB[3]
+11 1
+
+.names sum2Internal_Cin[3] sum2AorB[4] sum2cin_AorB[4]
+11 1
+
+.names sum2Internal_Cin[4] sum2AorB[5] sum2cin_AorB[5]
+11 1
+
+.names sum2Internal_Cin[5] sum2AorB[6] sum2cin_AorB[6]
+11 1
+
+.names sum2Internal_Cin[6] sum2AorB[7] sum2cin_AorB[7]
+11 1
+
+.names sum2Internal_Cin[7] sum2AorB[8] sum2cin_AorB[8]
+11 1
+
+.names sum2Internal_Cin[8] sum2AorB[9] sum2cin_AorB[9]
+11 1
+
+.names sum2[0] Partial_Products3[0] sum3AB[0]
+11 1
+
+.names sum2[10] Partial_Products3[10] sum3AB[10]
+11 1
+
+.names sum2[11] Partial_Products3[11] sum3AB[11]
+11 1
+
+.names sum2[1] Partial_Products3[1] sum3AB[1]
+11 1
+
+.names sum2[2] Partial_Products3[2] sum3AB[2]
+11 1
+
+.names sum2[3] Partial_Products3[3] sum3AB[3]
+11 1
+
+.names sum2[4] Partial_Products3[4] sum3AB[4]
+11 1
+
+.names sum2[5] Partial_Products3[5] sum3AB[5]
+11 1
+
+.names sum2[6] Partial_Products3[6] sum3AB[6]
+11 1
+
+.names sum2[7] Partial_Products3[7] sum3AB[7]
+11 1
+
+.names sum2[8] Partial_Products3[8] sum3AB[8]
+11 1
+
+.names sum2[9] Partial_Products3[9] sum3AB[9]
+11 1
+
+.names sum2[0] Partial_Products3[0] sum3AorB[0]
+-1 1
+1- 1
+
+.names sum2[10] Partial_Products3[10] sum3AorB[10]
+-1 1
+1- 1
+
+.names sum2[11] Partial_Products3[11] sum3AorB[11]
+-1 1
+1- 1
+
+.names sum2[1] Partial_Products3[1] sum3AorB[1]
+-1 1
+1- 1
+
+.names sum2[2] Partial_Products3[2] sum3AorB[2]
+-1 1
+1- 1
+
+.names sum2[3] Partial_Products3[3] sum3AorB[3]
+-1 1
+1- 1
+
+.names sum2[4] Partial_Products3[4] sum3AorB[4]
+-1 1
+1- 1
+
+.names sum2[5] Partial_Products3[5] sum3AorB[5]
+-1 1
+1- 1
+
+.names sum2[6] Partial_Products3[6] sum3AorB[6]
+-1 1
+1- 1
+
+.names sum2[7] Partial_Products3[7] sum3AorB[7]
+-1 1
+1- 1
+
+.names sum2[8] Partial_Products3[8] sum3AorB[8]
+-1 1
+1- 1
+
+.names sum2[9] Partial_Products3[9] sum3AorB[9]
+-1 1
+1- 1
+
+.names sum3AB[0] sum3cin_AorB[0] sum3Internal_Cin[0]
+-1 1
+1- 1
+
+.names sum3AB[10] sum3cin_AorB[10] sum3Internal_Cin[10]
+-1 1
+1- 1
+
+.names sum3AB[1] sum3cin_AorB[1] sum3Internal_Cin[1]
+-1 1
+1- 1
+
+.names sum3AB[2] sum3cin_AorB[2] sum3Internal_Cin[2]
+-1 1
+1- 1
+
+.names sum3AB[3] sum3cin_AorB[3] sum3Internal_Cin[3]
+-1 1
+1- 1
+
+.names sum3AB[4] sum3cin_AorB[4] sum3Internal_Cin[4]
+-1 1
+1- 1
+
+.names sum3AB[5] sum3cin_AorB[5] sum3Internal_Cin[5]
+-1 1
+1- 1
+
+.names sum3AB[6] sum3cin_AorB[6] sum3Internal_Cin[6]
+-1 1
+1- 1
+
+.names sum3AB[7] sum3cin_AorB[7] sum3Internal_Cin[7]
+-1 1
+1- 1
+
+.names sum3AB[8] sum3cin_AorB[8] sum3Internal_Cin[8]
+-1 1
+1- 1
+
+.names sum3AB[9] sum3cin_AorB[9] sum3Internal_Cin[9]
+-1 1
+1- 1
+
+.names sum2[0] Partial_Products3[0] ZERO sum3[0]
+001 1
+010 1
+100 1
+111 1
+
+.names sum2[10] Partial_Products3[10] sum3Internal_Cin[9] sum3[10]
+001 1
+010 1
+100 1
+111 1
+
+.names sum2[11] Partial_Products3[11] sum3Internal_Cin[10] sum3[11]
+001 1
+010 1
+100 1
+111 1
+
+.names sum3AB[11] sum3cin_AorB[11] sum3[12]
+-1 1
+1- 1
+
+.names sum2[1] Partial_Products3[1] sum3Internal_Cin[0] sum3[1]
+001 1
+010 1
+100 1
+111 1
+
+.names sum2[2] Partial_Products3[2] sum3Internal_Cin[1] sum3[2]
+001 1
+010 1
+100 1
+111 1
+
+.names sum2[3] Partial_Products3[3] sum3Internal_Cin[2] sum3[3]
+001 1
+010 1
+100 1
+111 1
+
+.names sum2[4] Partial_Products3[4] sum3Internal_Cin[3] sum3[4]
+001 1
+010 1
+100 1
+111 1
+
+.names sum2[5] Partial_Products3[5] sum3Internal_Cin[4] sum3[5]
+001 1
+010 1
+100 1
+111 1
+
+.names sum2[6] Partial_Products3[6] sum3Internal_Cin[5] sum3[6]
+001 1
+010 1
+100 1
+111 1
+
+.names sum2[7] Partial_Products3[7] sum3Internal_Cin[6] sum3[7]
+001 1
+010 1
+100 1
+111 1
+
+.names sum2[8] Partial_Products3[8] sum3Internal_Cin[7] sum3[8]
+001 1
+010 1
+100 1
+111 1
+
+.names sum2[9] Partial_Products3[9] sum3Internal_Cin[8] sum3[9]
+001 1
+010 1
+100 1
+111 1
+
+.names ZERO sum3AorB[0] sum3cin_AorB[0]
+11 1
+
+.names sum3Internal_Cin[9] sum3AorB[10] sum3cin_AorB[10]
+11 1
+
+.names sum3Internal_Cin[10] sum3AorB[11] sum3cin_AorB[11]
+11 1
+
+.names sum3Internal_Cin[0] sum3AorB[1] sum3cin_AorB[1]
+11 1
+
+.names sum3Internal_Cin[1] sum3AorB[2] sum3cin_AorB[2]
+11 1
+
+.names sum3Internal_Cin[2] sum3AorB[3] sum3cin_AorB[3]
+11 1
+
+.names sum3Internal_Cin[3] sum3AorB[4] sum3cin_AorB[4]
+11 1
+
+.names sum3Internal_Cin[4] sum3AorB[5] sum3cin_AorB[5]
+11 1
+
+.names sum3Internal_Cin[5] sum3AorB[6] sum3cin_AorB[6]
+11 1
+
+.names sum3Internal_Cin[6] sum3AorB[7] sum3cin_AorB[7]
+11 1
+
+.names sum3Internal_Cin[7] sum3AorB[8] sum3cin_AorB[8]
+11 1
+
+.names sum3Internal_Cin[8] sum3AorB[9] sum3cin_AorB[9]
+11 1
+
+.names sum4294967295[0]
+
+.names sum4294967295[1]
+
+.names sum4294967295[2]
+
+.names sum4294967295[3]
+
+.names sum4294967295[4]
+
+.names sum4294967295[5]
+
+.names sum4294967295[6]
+
+.names sum4294967295[7]
+
+.names sum4294967295[8]
+
+.names sum3[0] Partial_Products4[0] sum4AB[0]
+11 1
+
+.names sum3[10] Partial_Products4[10] sum4AB[10]
+11 1
+
+.names sum3[11] Partial_Products4[11] sum4AB[11]
+11 1
+
+.names sum3[12] Partial_Products4[12] sum4AB[12]
+11 1
+
+.names sum3[1] Partial_Products4[1] sum4AB[1]
+11 1
+
+.names sum3[2] Partial_Products4[2] sum4AB[2]
+11 1
+
+.names sum3[3] Partial_Products4[3] sum4AB[3]
+11 1
+
+.names sum3[4] Partial_Products4[4] sum4AB[4]
+11 1
+
+.names sum3[5] Partial_Products4[5] sum4AB[5]
+11 1
+
+.names sum3[6] Partial_Products4[6] sum4AB[6]
+11 1
+
+.names sum3[7] Partial_Products4[7] sum4AB[7]
+11 1
+
+.names sum3[8] Partial_Products4[8] sum4AB[8]
+11 1
+
+.names sum3[9] Partial_Products4[9] sum4AB[9]
+11 1
+
+.names sum3[0] Partial_Products4[0] sum4AorB[0]
+-1 1
+1- 1
+
+.names sum3[10] Partial_Products4[10] sum4AorB[10]
+-1 1
+1- 1
+
+.names sum3[11] Partial_Products4[11] sum4AorB[11]
+-1 1
+1- 1
+
+.names sum3[12] Partial_Products4[12] sum4AorB[12]
+-1 1
+1- 1
+
+.names sum3[1] Partial_Products4[1] sum4AorB[1]
+-1 1
+1- 1
+
+.names sum3[2] Partial_Products4[2] sum4AorB[2]
+-1 1
+1- 1
+
+.names sum3[3] Partial_Products4[3] sum4AorB[3]
+-1 1
+1- 1
+
+.names sum3[4] Partial_Products4[4] sum4AorB[4]
+-1 1
+1- 1
+
+.names sum3[5] Partial_Products4[5] sum4AorB[5]
+-1 1
+1- 1
+
+.names sum3[6] Partial_Products4[6] sum4AorB[6]
+-1 1
+1- 1
+
+.names sum3[7] Partial_Products4[7] sum4AorB[7]
+-1 1
+1- 1
+
+.names sum3[8] Partial_Products4[8] sum4AorB[8]
+-1 1
+1- 1
+
+.names sum3[9] Partial_Products4[9] sum4AorB[9]
+-1 1
+1- 1
+
+.names sum4AB[0] sum4cin_AorB[0] sum4Internal_Cin[0]
+-1 1
+1- 1
+
+.names sum4AB[10] sum4cin_AorB[10] sum4Internal_Cin[10]
+-1 1
+1- 1
+
+.names sum4AB[11] sum4cin_AorB[11] sum4Internal_Cin[11]
+-1 1
+1- 1
+
+.names sum4AB[1] sum4cin_AorB[1] sum4Internal_Cin[1]
+-1 1
+1- 1
+
+.names sum4AB[2] sum4cin_AorB[2] sum4Internal_Cin[2]
+-1 1
+1- 1
+
+.names sum4AB[3] sum4cin_AorB[3] sum4Internal_Cin[3]
+-1 1
+1- 1
+
+.names sum4AB[4] sum4cin_AorB[4] sum4Internal_Cin[4]
+-1 1
+1- 1
+
+.names sum4AB[5] sum4cin_AorB[5] sum4Internal_Cin[5]
+-1 1
+1- 1
+
+.names sum4AB[6] sum4cin_AorB[6] sum4Internal_Cin[6]
+-1 1
+1- 1
+
+.names sum4AB[7] sum4cin_AorB[7] sum4Internal_Cin[7]
+-1 1
+1- 1
+
+.names sum4AB[8] sum4cin_AorB[8] sum4Internal_Cin[8]
+-1 1
+1- 1
+
+.names sum4AB[9] sum4cin_AorB[9] sum4Internal_Cin[9]
+-1 1
+1- 1
+
+.names sum3[0] Partial_Products4[0] ZERO sum4[0]
+001 1
+010 1
+100 1
+111 1
+
+.names sum3[10] Partial_Products4[10] sum4Internal_Cin[9] sum4[10]
+001 1
+010 1
+100 1
+111 1
+
+.names sum3[11] Partial_Products4[11] sum4Internal_Cin[10] sum4[11]
+001 1
+010 1
+100 1
+111 1
+
+.names sum3[12] Partial_Products4[12] sum4Internal_Cin[11] sum4[12]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4AB[12] sum4cin_AorB[12] sum4[13]
+-1 1
+1- 1
+
+.names sum3[1] Partial_Products4[1] sum4Internal_Cin[0] sum4[1]
+001 1
+010 1
+100 1
+111 1
+
+.names sum3[2] Partial_Products4[2] sum4Internal_Cin[1] sum4[2]
+001 1
+010 1
+100 1
+111 1
+
+.names sum3[3] Partial_Products4[3] sum4Internal_Cin[2] sum4[3]
+001 1
+010 1
+100 1
+111 1
+
+.names sum3[4] Partial_Products4[4] sum4Internal_Cin[3] sum4[4]
+001 1
+010 1
+100 1
+111 1
+
+.names sum3[5] Partial_Products4[5] sum4Internal_Cin[4] sum4[5]
+001 1
+010 1
+100 1
+111 1
+
+.names sum3[6] Partial_Products4[6] sum4Internal_Cin[5] sum4[6]
+001 1
+010 1
+100 1
+111 1
+
+.names sum3[7] Partial_Products4[7] sum4Internal_Cin[6] sum4[7]
+001 1
+010 1
+100 1
+111 1
+
+.names sum3[8] Partial_Products4[8] sum4Internal_Cin[7] sum4[8]
+001 1
+010 1
+100 1
+111 1
+
+.names sum3[9] Partial_Products4[9] sum4Internal_Cin[8] sum4[9]
+001 1
+010 1
+100 1
+111 1
+
+.names ZERO sum4AorB[0] sum4cin_AorB[0]
+11 1
+
+.names sum4Internal_Cin[9] sum4AorB[10] sum4cin_AorB[10]
+11 1
+
+.names sum4Internal_Cin[10] sum4AorB[11] sum4cin_AorB[11]
+11 1
+
+.names sum4Internal_Cin[11] sum4AorB[12] sum4cin_AorB[12]
+11 1
+
+.names sum4Internal_Cin[0] sum4AorB[1] sum4cin_AorB[1]
+11 1
+
+.names sum4Internal_Cin[1] sum4AorB[2] sum4cin_AorB[2]
+11 1
+
+.names sum4Internal_Cin[2] sum4AorB[3] sum4cin_AorB[3]
+11 1
+
+.names sum4Internal_Cin[3] sum4AorB[4] sum4cin_AorB[4]
+11 1
+
+.names sum4Internal_Cin[4] sum4AorB[5] sum4cin_AorB[5]
+11 1
+
+.names sum4Internal_Cin[5] sum4AorB[6] sum4cin_AorB[6]
+11 1
+
+.names sum4Internal_Cin[6] sum4AorB[7] sum4cin_AorB[7]
+11 1
+
+.names sum4Internal_Cin[7] sum4AorB[8] sum4cin_AorB[8]
+11 1
+
+.names sum4Internal_Cin[8] sum4AorB[9] sum4cin_AorB[9]
+11 1
+
+.names sum4[0] Partial_Products5[0] sum5AB[0]
+11 1
+
+.names sum4[10] Partial_Products5[10] sum5AB[10]
+11 1
+
+.names sum4[11] Partial_Products5[11] sum5AB[11]
+11 1
+
+.names sum4[12] Partial_Products5[12] sum5AB[12]
+11 1
+
+.names sum4[13] Partial_Products5[13] sum5AB[13]
+11 1
+
+.names sum4[1] Partial_Products5[1] sum5AB[1]
+11 1
+
+.names sum4[2] Partial_Products5[2] sum5AB[2]
+11 1
+
+.names sum4[3] Partial_Products5[3] sum5AB[3]
+11 1
+
+.names sum4[4] Partial_Products5[4] sum5AB[4]
+11 1
+
+.names sum4[5] Partial_Products5[5] sum5AB[5]
+11 1
+
+.names sum4[6] Partial_Products5[6] sum5AB[6]
+11 1
+
+.names sum4[7] Partial_Products5[7] sum5AB[7]
+11 1
+
+.names sum4[8] Partial_Products5[8] sum5AB[8]
+11 1
+
+.names sum4[9] Partial_Products5[9] sum5AB[9]
+11 1
+
+.names sum4[0] Partial_Products5[0] sum5AorB[0]
+-1 1
+1- 1
+
+.names sum4[10] Partial_Products5[10] sum5AorB[10]
+-1 1
+1- 1
+
+.names sum4[11] Partial_Products5[11] sum5AorB[11]
+-1 1
+1- 1
+
+.names sum4[12] Partial_Products5[12] sum5AorB[12]
+-1 1
+1- 1
+
+.names sum4[13] Partial_Products5[13] sum5AorB[13]
+-1 1
+1- 1
+
+.names sum4[1] Partial_Products5[1] sum5AorB[1]
+-1 1
+1- 1
+
+.names sum4[2] Partial_Products5[2] sum5AorB[2]
+-1 1
+1- 1
+
+.names sum4[3] Partial_Products5[3] sum5AorB[3]
+-1 1
+1- 1
+
+.names sum4[4] Partial_Products5[4] sum5AorB[4]
+-1 1
+1- 1
+
+.names sum4[5] Partial_Products5[5] sum5AorB[5]
+-1 1
+1- 1
+
+.names sum4[6] Partial_Products5[6] sum5AorB[6]
+-1 1
+1- 1
+
+.names sum4[7] Partial_Products5[7] sum5AorB[7]
+-1 1
+1- 1
+
+.names sum4[8] Partial_Products5[8] sum5AorB[8]
+-1 1
+1- 1
+
+.names sum4[9] Partial_Products5[9] sum5AorB[9]
+-1 1
+1- 1
+
+.names sum5AB[0] sum5cin_AorB[0] sum5Internal_Cin[0]
+-1 1
+1- 1
+
+.names sum5AB[10] sum5cin_AorB[10] sum5Internal_Cin[10]
+-1 1
+1- 1
+
+.names sum5AB[11] sum5cin_AorB[11] sum5Internal_Cin[11]
+-1 1
+1- 1
+
+.names sum5AB[12] sum5cin_AorB[12] sum5Internal_Cin[12]
+-1 1
+1- 1
+
+.names sum5AB[1] sum5cin_AorB[1] sum5Internal_Cin[1]
+-1 1
+1- 1
+
+.names sum5AB[2] sum5cin_AorB[2] sum5Internal_Cin[2]
+-1 1
+1- 1
+
+.names sum5AB[3] sum5cin_AorB[3] sum5Internal_Cin[3]
+-1 1
+1- 1
+
+.names sum5AB[4] sum5cin_AorB[4] sum5Internal_Cin[4]
+-1 1
+1- 1
+
+.names sum5AB[5] sum5cin_AorB[5] sum5Internal_Cin[5]
+-1 1
+1- 1
+
+.names sum5AB[6] sum5cin_AorB[6] sum5Internal_Cin[6]
+-1 1
+1- 1
+
+.names sum5AB[7] sum5cin_AorB[7] sum5Internal_Cin[7]
+-1 1
+1- 1
+
+.names sum5AB[8] sum5cin_AorB[8] sum5Internal_Cin[8]
+-1 1
+1- 1
+
+.names sum5AB[9] sum5cin_AorB[9] sum5Internal_Cin[9]
+-1 1
+1- 1
+
+.names sum4[0] Partial_Products5[0] ZERO sum5[0]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4[10] Partial_Products5[10] sum5Internal_Cin[9] sum5[10]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4[11] Partial_Products5[11] sum5Internal_Cin[10] sum5[11]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4[12] Partial_Products5[12] sum5Internal_Cin[11] sum5[12]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4[13] Partial_Products5[13] sum5Internal_Cin[12] sum5[13]
+001 1
+010 1
+100 1
+111 1
+
+.names sum5AB[13] sum5cin_AorB[13] sum5[14]
+-1 1
+1- 1
+
+.names sum4[1] Partial_Products5[1] sum5Internal_Cin[0] sum5[1]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4[2] Partial_Products5[2] sum5Internal_Cin[1] sum5[2]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4[3] Partial_Products5[3] sum5Internal_Cin[2] sum5[3]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4[4] Partial_Products5[4] sum5Internal_Cin[3] sum5[4]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4[5] Partial_Products5[5] sum5Internal_Cin[4] sum5[5]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4[6] Partial_Products5[6] sum5Internal_Cin[5] sum5[6]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4[7] Partial_Products5[7] sum5Internal_Cin[6] sum5[7]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4[8] Partial_Products5[8] sum5Internal_Cin[7] sum5[8]
+001 1
+010 1
+100 1
+111 1
+
+.names sum4[9] Partial_Products5[9] sum5Internal_Cin[8] sum5[9]
+001 1
+010 1
+100 1
+111 1
+
+.names ZERO sum5AorB[0] sum5cin_AorB[0]
+11 1
+
+.names sum5Internal_Cin[9] sum5AorB[10] sum5cin_AorB[10]
+11 1
+
+.names sum5Internal_Cin[10] sum5AorB[11] sum5cin_AorB[11]
+11 1
+
+.names sum5Internal_Cin[11] sum5AorB[12] sum5cin_AorB[12]
+11 1
+
+.names sum5Internal_Cin[12] sum5AorB[13] sum5cin_AorB[13]
+11 1
+
+.names sum5Internal_Cin[0] sum5AorB[1] sum5cin_AorB[1]
+11 1
+
+.names sum5Internal_Cin[1] sum5AorB[2] sum5cin_AorB[2]
+11 1
+
+.names sum5Internal_Cin[2] sum5AorB[3] sum5cin_AorB[3]
+11 1
+
+.names sum5Internal_Cin[3] sum5AorB[4] sum5cin_AorB[4]
+11 1
+
+.names sum5Internal_Cin[4] sum5AorB[5] sum5cin_AorB[5]
+11 1
+
+.names sum5Internal_Cin[5] sum5AorB[6] sum5cin_AorB[6]
+11 1
+
+.names sum5Internal_Cin[6] sum5AorB[7] sum5cin_AorB[7]
+11 1
+
+.names sum5Internal_Cin[7] sum5AorB[8] sum5cin_AorB[8]
+11 1
+
+.names sum5Internal_Cin[8] sum5AorB[9] sum5cin_AorB[9]
+11 1
+
+.names sum5[0] Partial_Products6[0] sum6AB[0]
+11 1
+
+.names sum5[10] Partial_Products6[10] sum6AB[10]
+11 1
+
+.names sum5[11] Partial_Products6[11] sum6AB[11]
+11 1
+
+.names sum5[12] Partial_Products6[12] sum6AB[12]
+11 1
+
+.names sum5[13] Partial_Products6[13] sum6AB[13]
+11 1
+
+.names sum5[14] Partial_Products6[14] sum6AB[14]
+11 1
+
+.names sum5[1] Partial_Products6[1] sum6AB[1]
+11 1
+
+.names sum5[2] Partial_Products6[2] sum6AB[2]
+11 1
+
+.names sum5[3] Partial_Products6[3] sum6AB[3]
+11 1
+
+.names sum5[4] Partial_Products6[4] sum6AB[4]
+11 1
+
+.names sum5[5] Partial_Products6[5] sum6AB[5]
+11 1
+
+.names sum5[6] Partial_Products6[6] sum6AB[6]
+11 1
+
+.names sum5[7] Partial_Products6[7] sum6AB[7]
+11 1
+
+.names sum5[8] Partial_Products6[8] sum6AB[8]
+11 1
+
+.names sum5[9] Partial_Products6[9] sum6AB[9]
+11 1
+
+.names sum5[0] Partial_Products6[0] sum6AorB[0]
+-1 1
+1- 1
+
+.names sum5[10] Partial_Products6[10] sum6AorB[10]
+-1 1
+1- 1
+
+.names sum5[11] Partial_Products6[11] sum6AorB[11]
+-1 1
+1- 1
+
+.names sum5[12] Partial_Products6[12] sum6AorB[12]
+-1 1
+1- 1
+
+.names sum5[13] Partial_Products6[13] sum6AorB[13]
+-1 1
+1- 1
+
+.names sum5[14] Partial_Products6[14] sum6AorB[14]
+-1 1
+1- 1
+
+.names sum5[1] Partial_Products6[1] sum6AorB[1]
+-1 1
+1- 1
+
+.names sum5[2] Partial_Products6[2] sum6AorB[2]
+-1 1
+1- 1
+
+.names sum5[3] Partial_Products6[3] sum6AorB[3]
+-1 1
+1- 1
+
+.names sum5[4] Partial_Products6[4] sum6AorB[4]
+-1 1
+1- 1
+
+.names sum5[5] Partial_Products6[5] sum6AorB[5]
+-1 1
+1- 1
+
+.names sum5[6] Partial_Products6[6] sum6AorB[6]
+-1 1
+1- 1
+
+.names sum5[7] Partial_Products6[7] sum6AorB[7]
+-1 1
+1- 1
+
+.names sum5[8] Partial_Products6[8] sum6AorB[8]
+-1 1
+1- 1
+
+.names sum5[9] Partial_Products6[9] sum6AorB[9]
+-1 1
+1- 1
+
+.names sum6AB[0] sum6cin_AorB[0] sum6Internal_Cin[0]
+-1 1
+1- 1
+
+.names sum6AB[10] sum6cin_AorB[10] sum6Internal_Cin[10]
+-1 1
+1- 1
+
+.names sum6AB[11] sum6cin_AorB[11] sum6Internal_Cin[11]
+-1 1
+1- 1
+
+.names sum6AB[12] sum6cin_AorB[12] sum6Internal_Cin[12]
+-1 1
+1- 1
+
+.names sum6AB[13] sum6cin_AorB[13] sum6Internal_Cin[13]
+-1 1
+1- 1
+
+.names sum6AB[1] sum6cin_AorB[1] sum6Internal_Cin[1]
+-1 1
+1- 1
+
+.names sum6AB[2] sum6cin_AorB[2] sum6Internal_Cin[2]
+-1 1
+1- 1
+
+.names sum6AB[3] sum6cin_AorB[3] sum6Internal_Cin[3]
+-1 1
+1- 1
+
+.names sum6AB[4] sum6cin_AorB[4] sum6Internal_Cin[4]
+-1 1
+1- 1
+
+.names sum6AB[5] sum6cin_AorB[5] sum6Internal_Cin[5]
+-1 1
+1- 1
+
+.names sum6AB[6] sum6cin_AorB[6] sum6Internal_Cin[6]
+-1 1
+1- 1
+
+.names sum6AB[7] sum6cin_AorB[7] sum6Internal_Cin[7]
+-1 1
+1- 1
+
+.names sum6AB[8] sum6cin_AorB[8] sum6Internal_Cin[8]
+-1 1
+1- 1
+
+.names sum6AB[9] sum6cin_AorB[9] sum6Internal_Cin[9]
+-1 1
+1- 1
+
+.names sum5[0] Partial_Products6[0] ZERO sum6[0]
+001 1
+010 1
+100 1
+111 1
+
+.names sum5[10] Partial_Products6[10] sum6Internal_Cin[9] sum6[10]
+001 1
+010 1
+100 1
+111 1
+
+.names sum5[11] Partial_Products6[11] sum6Internal_Cin[10] sum6[11]
+001 1
+010 1
+100 1
+111 1
+
+.names sum5[12] Partial_Products6[12] sum6Internal_Cin[11] sum6[12]
+001 1
+010 1
+100 1
+111 1
+
+.names sum5[13] Partial_Products6[13] sum6Internal_Cin[12] sum6[13]
+001 1
+010 1
+100 1
+111 1
+
+.names sum5[14] Partial_Products6[14] sum6Internal_Cin[13] sum6[14]
+001 1
+010 1
+100 1
+111 1
+
+.names sum6AB[14] sum6cin_AorB[14] sum6[15]
+-1 1
+1- 1
+
+.names sum5[1] Partial_Products6[1] sum6Internal_Cin[0] sum6[1]
+001 1
+010 1
+100 1
+111 1
+
+.names sum5[2] Partial_Products6[2] sum6Internal_Cin[1] sum6[2]
+001 1
+010 1
+100 1
+111 1
+
+.names sum5[3] Partial_Products6[3] sum6Internal_Cin[2] sum6[3]
+001 1
+010 1
+100 1
+111 1
+
+.names sum5[4] Partial_Products6[4] sum6Internal_Cin[3] sum6[4]
+001 1
+010 1
+100 1
+111 1
+
+.names sum5[5] Partial_Products6[5] sum6Internal_Cin[4] sum6[5]
+001 1
+010 1
+100 1
+111 1
+
+.names sum5[6] Partial_Products6[6] sum6Internal_Cin[5] sum6[6]
+001 1
+010 1
+100 1
+111 1
+
+.names sum5[7] Partial_Products6[7] sum6Internal_Cin[6] sum6[7]
+001 1
+010 1
+100 1
+111 1
+
+.names sum5[8] Partial_Products6[8] sum6Internal_Cin[7] sum6[8]
+001 1
+010 1
+100 1
+111 1
+
+.names sum5[9] Partial_Products6[9] sum6Internal_Cin[8] sum6[9]
+001 1
+010 1
+100 1
+111 1
+
+.names ZERO sum6AorB[0] sum6cin_AorB[0]
+11 1
+
+.names sum6Internal_Cin[9] sum6AorB[10] sum6cin_AorB[10]
+11 1
+
+.names sum6Internal_Cin[10] sum6AorB[11] sum6cin_AorB[11]
+11 1
+
+.names sum6Internal_Cin[11] sum6AorB[12] sum6cin_AorB[12]
+11 1
+
+.names sum6Internal_Cin[12] sum6AorB[13] sum6cin_AorB[13]
+11 1
+
+.names sum6Internal_Cin[13] sum6AorB[14] sum6cin_AorB[14]
+11 1
+
+.names sum6Internal_Cin[0] sum6AorB[1] sum6cin_AorB[1]
+11 1
+
+.names sum6Internal_Cin[1] sum6AorB[2] sum6cin_AorB[2]
+11 1
+
+.names sum6Internal_Cin[2] sum6AorB[3] sum6cin_AorB[3]
+11 1
+
+.names sum6Internal_Cin[3] sum6AorB[4] sum6cin_AorB[4]
+11 1
+
+.names sum6Internal_Cin[4] sum6AorB[5] sum6cin_AorB[5]
+11 1
+
+.names sum6Internal_Cin[5] sum6AorB[6] sum6cin_AorB[6]
+11 1
+
+.names sum6Internal_Cin[6] sum6AorB[7] sum6cin_AorB[7]
+11 1
+
+.names sum6Internal_Cin[7] sum6AorB[8] sum6cin_AorB[8]
+11 1
+
+.names sum6Internal_Cin[8] sum6AorB[9] sum6cin_AorB[9]
+11 1
+
+.names sum6[0] Partial_Products7[0] sum7AB[0]
+11 1
+
+.names sum6[10] Partial_Products7[10] sum7AB[10]
+11 1
+
+.names sum6[11] Partial_Products7[11] sum7AB[11]
+11 1
+
+.names sum6[12] Partial_Products7[12] sum7AB[12]
+11 1
+
+.names sum6[13] Partial_Products7[13] sum7AB[13]
+11 1
+
+.names sum6[14] Partial_Products7[14] sum7AB[14]
+11 1
+
+.names sum6[15] Partial_Products7[15] sum7AB[15]
+11 1
+
+.names sum6[1] Partial_Products7[1] sum7AB[1]
+11 1
+
+.names sum6[2] Partial_Products7[2] sum7AB[2]
+11 1
+
+.names sum6[3] Partial_Products7[3] sum7AB[3]
+11 1
+
+.names sum6[4] Partial_Products7[4] sum7AB[4]
+11 1
+
+.names sum6[5] Partial_Products7[5] sum7AB[5]
+11 1
+
+.names sum6[6] Partial_Products7[6] sum7AB[6]
+11 1
+
+.names sum6[7] Partial_Products7[7] sum7AB[7]
+11 1
+
+.names sum6[8] Partial_Products7[8] sum7AB[8]
+11 1
+
+.names sum6[9] Partial_Products7[9] sum7AB[9]
+11 1
+
+.names sum6[0] Partial_Products7[0] sum7AorB[0]
+-1 1
+1- 1
+
+.names sum6[10] Partial_Products7[10] sum7AorB[10]
+-1 1
+1- 1
+
+.names sum6[11] Partial_Products7[11] sum7AorB[11]
+-1 1
+1- 1
+
+.names sum6[12] Partial_Products7[12] sum7AorB[12]
+-1 1
+1- 1
+
+.names sum6[13] Partial_Products7[13] sum7AorB[13]
+-1 1
+1- 1
+
+.names sum6[14] Partial_Products7[14] sum7AorB[14]
+-1 1
+1- 1
+
+.names sum6[15] Partial_Products7[15] sum7AorB[15]
+-1 1
+1- 1
+
+.names sum6[1] Partial_Products7[1] sum7AorB[1]
+-1 1
+1- 1
+
+.names sum6[2] Partial_Products7[2] sum7AorB[2]
+-1 1
+1- 1
+
+.names sum6[3] Partial_Products7[3] sum7AorB[3]
+-1 1
+1- 1
+
+.names sum6[4] Partial_Products7[4] sum7AorB[4]
+-1 1
+1- 1
+
+.names sum6[5] Partial_Products7[5] sum7AorB[5]
+-1 1
+1- 1
+
+.names sum6[6] Partial_Products7[6] sum7AorB[6]
+-1 1
+1- 1
+
+.names sum6[7] Partial_Products7[7] sum7AorB[7]
+-1 1
+1- 1
+
+.names sum6[8] Partial_Products7[8] sum7AorB[8]
+-1 1
+1- 1
+
+.names sum6[9] Partial_Products7[9] sum7AorB[9]
+-1 1
+1- 1
+
+.names sum7AB[0] sum7cin_AorB[0] sum7Internal_Cin[0]
+-1 1
+1- 1
+
+.names sum7AB[10] sum7cin_AorB[10] sum7Internal_Cin[10]
+-1 1
+1- 1
+
+.names sum7AB[11] sum7cin_AorB[11] sum7Internal_Cin[11]
+-1 1
+1- 1
+
+.names sum7AB[12] sum7cin_AorB[12] sum7Internal_Cin[12]
+-1 1
+1- 1
+
+.names sum7AB[13] sum7cin_AorB[13] sum7Internal_Cin[13]
+-1 1
+1- 1
+
+.names sum7AB[14] sum7cin_AorB[14] sum7Internal_Cin[14]
+-1 1
+1- 1
+
+.names sum7AB[1] sum7cin_AorB[1] sum7Internal_Cin[1]
+-1 1
+1- 1
+
+.names sum7AB[2] sum7cin_AorB[2] sum7Internal_Cin[2]
+-1 1
+1- 1
+
+.names sum7AB[3] sum7cin_AorB[3] sum7Internal_Cin[3]
+-1 1
+1- 1
+
+.names sum7AB[4] sum7cin_AorB[4] sum7Internal_Cin[4]
+-1 1
+1- 1
+
+.names sum7AB[5] sum7cin_AorB[5] sum7Internal_Cin[5]
+-1 1
+1- 1
+
+.names sum7AB[6] sum7cin_AorB[6] sum7Internal_Cin[6]
+-1 1
+1- 1
+
+.names sum7AB[7] sum7cin_AorB[7] sum7Internal_Cin[7]
+-1 1
+1- 1
+
+.names sum7AB[8] sum7cin_AorB[8] sum7Internal_Cin[8]
+-1 1
+1- 1
+
+.names sum7AB[9] sum7cin_AorB[9] sum7Internal_Cin[9]
+-1 1
+1- 1
+
+.names sum6[0] Partial_Products7[0] ZERO sum7[0]
+001 1
+010 1
+100 1
+111 1
+
+.names sum6[10] Partial_Products7[10] sum7Internal_Cin[9] sum7[10]
+001 1
+010 1
+100 1
+111 1
+
+.names sum6[11] Partial_Products7[11] sum7Internal_Cin[10] sum7[11]
+001 1
+010 1
+100 1
+111 1
+
+.names sum6[12] Partial_Products7[12] sum7Internal_Cin[11] sum7[12]
+001 1
+010 1
+100 1
+111 1
+
+.names sum6[13] Partial_Products7[13] sum7Internal_Cin[12] sum7[13]
+001 1
+010 1
+100 1
+111 1
+
+.names sum6[14] Partial_Products7[14] sum7Internal_Cin[13] sum7[14]
+001 1
+010 1
+100 1
+111 1
+
+.names sum6[15] Partial_Products7[15] sum7Internal_Cin[14] sum7[15]
+001 1
+010 1
+100 1
+111 1
+
+.names sum7AB[15] sum7cin_AorB[15] sum7[16]
+-1 1
+1- 1
+
+.names sum6[1] Partial_Products7[1] sum7Internal_Cin[0] sum7[1]
+001 1
+010 1
+100 1
+111 1
+
+.names sum6[2] Partial_Products7[2] sum7Internal_Cin[1] sum7[2]
+001 1
+010 1
+100 1
+111 1
+
+.names sum6[3] Partial_Products7[3] sum7Internal_Cin[2] sum7[3]
+001 1
+010 1
+100 1
+111 1
+
+.names sum6[4] Partial_Products7[4] sum7Internal_Cin[3] sum7[4]
+001 1
+010 1
+100 1
+111 1
+
+.names sum6[5] Partial_Products7[5] sum7Internal_Cin[4] sum7[5]
+001 1
+010 1
+100 1
+111 1
+
+.names sum6[6] Partial_Products7[6] sum7Internal_Cin[5] sum7[6]
+001 1
+010 1
+100 1
+111 1
+
+.names sum6[7] Partial_Products7[7] sum7Internal_Cin[6] sum7[7]
+001 1
+010 1
+100 1
+111 1
+
+.names sum6[8] Partial_Products7[8] sum7Internal_Cin[7] sum7[8]
+001 1
+010 1
+100 1
+111 1
+
+.names sum6[9] Partial_Products7[9] sum7Internal_Cin[8] sum7[9]
+001 1
+010 1
+100 1
+111 1
+
+.names ZERO sum7AorB[0] sum7cin_AorB[0]
+11 1
+
+.names sum7Internal_Cin[9] sum7AorB[10] sum7cin_AorB[10]
+11 1
+
+.names sum7Internal_Cin[10] sum7AorB[11] sum7cin_AorB[11]
+11 1
+
+.names sum7Internal_Cin[11] sum7AorB[12] sum7cin_AorB[12]
+11 1
+
+.names sum7Internal_Cin[12] sum7AorB[13] sum7cin_AorB[13]
+11 1
+
+.names sum7Internal_Cin[13] sum7AorB[14] sum7cin_AorB[14]
+11 1
+
+.names sum7Internal_Cin[14] sum7AorB[15] sum7cin_AorB[15]
+11 1
+
+.names sum7Internal_Cin[0] sum7AorB[1] sum7cin_AorB[1]
+11 1
+
+.names sum7Internal_Cin[1] sum7AorB[2] sum7cin_AorB[2]
+11 1
+
+.names sum7Internal_Cin[2] sum7AorB[3] sum7cin_AorB[3]
+11 1
+
+.names sum7Internal_Cin[3] sum7AorB[4] sum7cin_AorB[4]
+11 1
+
+.names sum7Internal_Cin[4] sum7AorB[5] sum7cin_AorB[5]
+11 1
+
+.names sum7Internal_Cin[5] sum7AorB[6] sum7cin_AorB[6]
+11 1
+
+.names sum7Internal_Cin[6] sum7AorB[7] sum7cin_AorB[7]
+11 1
+
+.names sum7Internal_Cin[7] sum7AorB[8] sum7cin_AorB[8]
+11 1
+
+.names sum7Internal_Cin[8] sum7AorB[9] sum7cin_AorB[9]
+11 1
+
+.names sum7[0] Partial_Products8[0] zAB[0]
+11 1
+
+.names sum7[10] Partial_Products8[10] zAB[10]
+11 1
+
+.names sum7[11] Partial_Products8[11] zAB[11]
+11 1
+
+.names sum7[12] Partial_Products8[12] zAB[12]
+11 1
+
+.names sum7[13] Partial_Products8[13] zAB[13]
+11 1
+
+.names sum7[14] Partial_Products8[14] zAB[14]
+11 1
+
+.names sum7[15] Partial_Products8[15] zAB[15]
+11 1
+
+.names sum7[16] Partial_Products8[16] zAB[16]
+11 1
+
+.names sum7[1] Partial_Products8[1] zAB[1]
+11 1
+
+.names sum7[2] Partial_Products8[2] zAB[2]
+11 1
+
+.names sum7[3] Partial_Products8[3] zAB[3]
+11 1
+
+.names sum7[4] Partial_Products8[4] zAB[4]
+11 1
+
+.names sum7[5] Partial_Products8[5] zAB[5]
+11 1
+
+.names sum7[6] Partial_Products8[6] zAB[6]
+11 1
+
+.names sum7[7] Partial_Products8[7] zAB[7]
+11 1
+
+.names sum7[8] Partial_Products8[8] zAB[8]
+11 1
+
+.names sum7[9] Partial_Products8[9] zAB[9]
+11 1
+
+.names sum7[0] Partial_Products8[0] zAorB[0]
+-1 1
+1- 1
+
+.names sum7[10] Partial_Products8[10] zAorB[10]
+-1 1
+1- 1
+
+.names sum7[11] Partial_Products8[11] zAorB[11]
+-1 1
+1- 1
+
+.names sum7[12] Partial_Products8[12] zAorB[12]
+-1 1
+1- 1
+
+.names sum7[13] Partial_Products8[13] zAorB[13]
+-1 1
+1- 1
+
+.names sum7[14] Partial_Products8[14] zAorB[14]
+-1 1
+1- 1
+
+.names sum7[15] Partial_Products8[15] zAorB[15]
+-1 1
+1- 1
+
+.names sum7[16] Partial_Products8[16] zAorB[16]
+-1 1
+1- 1
+
+.names sum7[1] Partial_Products8[1] zAorB[1]
+-1 1
+1- 1
+
+.names sum7[2] Partial_Products8[2] zAorB[2]
+-1 1
+1- 1
+
+.names sum7[3] Partial_Products8[3] zAorB[3]
+-1 1
+1- 1
+
+.names sum7[4] Partial_Products8[4] zAorB[4]
+-1 1
+1- 1
+
+.names sum7[5] Partial_Products8[5] zAorB[5]
+-1 1
+1- 1
+
+.names sum7[6] Partial_Products8[6] zAorB[6]
+-1 1
+1- 1
+
+.names sum7[7] Partial_Products8[7] zAorB[7]
+-1 1
+1- 1
+
+.names sum7[8] Partial_Products8[8] zAorB[8]
+-1 1
+1- 1
+
+.names sum7[9] Partial_Products8[9] zAorB[9]
+-1 1
+1- 1
+
+.names zAB[0] zcin_AorB[0] zInternal_Cin[0]
+-1 1
+1- 1
+
+.names zAB[10] zcin_AorB[10] zInternal_Cin[10]
+-1 1
+1- 1
+
+.names zAB[11] zcin_AorB[11] zInternal_Cin[11]
+-1 1
+1- 1
+
+.names zAB[12] zcin_AorB[12] zInternal_Cin[12]
+-1 1
+1- 1
+
+.names zAB[13] zcin_AorB[13] zInternal_Cin[13]
+-1 1
+1- 1
+
+.names zAB[14] zcin_AorB[14] zInternal_Cin[14]
+-1 1
+1- 1
+
+.names zAB[15] zcin_AorB[15] zInternal_Cin[15]
+-1 1
+1- 1
+
+.names zAB[1] zcin_AorB[1] zInternal_Cin[1]
+-1 1
+1- 1
+
+.names zAB[2] zcin_AorB[2] zInternal_Cin[2]
+-1 1
+1- 1
+
+.names zAB[3] zcin_AorB[3] zInternal_Cin[3]
+-1 1
+1- 1
+
+.names zAB[4] zcin_AorB[4] zInternal_Cin[4]
+-1 1
+1- 1
+
+.names zAB[5] zcin_AorB[5] zInternal_Cin[5]
+-1 1
+1- 1
+
+.names zAB[6] zcin_AorB[6] zInternal_Cin[6]
+-1 1
+1- 1
+
+.names zAB[7] zcin_AorB[7] zInternal_Cin[7]
+-1 1
+1- 1
+
+.names zAB[8] zcin_AorB[8] zInternal_Cin[8]
+-1 1
+1- 1
+
+.names zAB[9] zcin_AorB[9] zInternal_Cin[9]
+-1 1
+1- 1
+
+.names sum7[0] Partial_Products8[0] ZERO z[0]
+001 1
+010 1
+100 1
+111 1
+
+.names sum7[10] Partial_Products8[10] zInternal_Cin[9] z[10]
+001 1
+010 1
+100 1
+111 1
+
+.names sum7[11] Partial_Products8[11] zInternal_Cin[10] z[11]
+001 1
+010 1
+100 1
+111 1
+
+.names sum7[12] Partial_Products8[12] zInternal_Cin[11] z[12]
+001 1
+010 1
+100 1
+111 1
+
+.names sum7[13] Partial_Products8[13] zInternal_Cin[12] z[13]
+001 1
+010 1
+100 1
+111 1
+
+.names sum7[14] Partial_Products8[14] zInternal_Cin[13] z[14]
+001 1
+010 1
+100 1
+111 1
+
+.names sum7[15] Partial_Products8[15] zInternal_Cin[14] z[15]
+001 1
+010 1
+100 1
+111 1
+
+.names sum7[16] Partial_Products8[16] zInternal_Cin[15] z[16]
+001 1
+010 1
+100 1
+111 1
+
+.names zAB[16] zcin_AorB[16] z[17]
+-1 1
+1- 1
+
+.names sum7[1] Partial_Products8[1] zInternal_Cin[0] z[1]
+001 1
+010 1
+100 1
+111 1
+
+.names sum7[2] Partial_Products8[2] zInternal_Cin[1] z[2]
+001 1
+010 1
+100 1
+111 1
+
+.names sum7[3] Partial_Products8[3] zInternal_Cin[2] z[3]
+001 1
+010 1
+100 1
+111 1
+
+.names sum7[4] Partial_Products8[4] zInternal_Cin[3] z[4]
+001 1
+010 1
+100 1
+111 1
+
+.names sum7[5] Partial_Products8[5] zInternal_Cin[4] z[5]
+001 1
+010 1
+100 1
+111 1
+
+.names sum7[6] Partial_Products8[6] zInternal_Cin[5] z[6]
+001 1
+010 1
+100 1
+111 1
+
+.names sum7[7] Partial_Products8[7] zInternal_Cin[6] z[7]
+001 1
+010 1
+100 1
+111 1
+
+.names sum7[8] Partial_Products8[8] zInternal_Cin[7] z[8]
+001 1
+010 1
+100 1
+111 1
+
+.names sum7[9] Partial_Products8[9] zInternal_Cin[8] z[9]
+001 1
+010 1
+100 1
+111 1
+
+.names ZERO zAorB[0] zcin_AorB[0]
+11 1
+
+.names zInternal_Cin[9] zAorB[10] zcin_AorB[10]
+11 1
+
+.names zInternal_Cin[10] zAorB[11] zcin_AorB[11]
+11 1
+
+.names zInternal_Cin[11] zAorB[12] zcin_AorB[12]
+11 1
+
+.names zInternal_Cin[12] zAorB[13] zcin_AorB[13]
+11 1
+
+.names zInternal_Cin[13] zAorB[14] zcin_AorB[14]
+11 1
+
+.names zInternal_Cin[14] zAorB[15] zcin_AorB[15]
+11 1
+
+.names zInternal_Cin[15] zAorB[16] zcin_AorB[16]
+11 1
+
+.names zInternal_Cin[0] zAorB[1] zcin_AorB[1]
+11 1
+
+.names zInternal_Cin[1] zAorB[2] zcin_AorB[2]
+11 1
+
+.names zInternal_Cin[2] zAorB[3] zcin_AorB[3]
+11 1
+
+.names zInternal_Cin[3] zAorB[4] zcin_AorB[4]
+11 1
+
+.names zInternal_Cin[4] zAorB[5] zcin_AorB[5]
+11 1
+
+.names zInternal_Cin[5] zAorB[6] zcin_AorB[6]
+11 1
+
+.names zInternal_Cin[6] zAorB[7] zcin_AorB[7]
+11 1
+
+.names zInternal_Cin[7] zAorB[8] zcin_AorB[8]
+11 1
+
+.names zInternal_Cin[8] zAorB[9] zcin_AorB[9]
+11 1
+
+.end

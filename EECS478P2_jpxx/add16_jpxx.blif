@@ -1,0 +1,329 @@
+.model adder
+
+.inputs a[0] a[10] a[11] a[12] a[13] a[14] a[15] a[1] a[2] a[3] a[4] a[5] a[6] a[7] a[8] a[9] b[0] b[10] b[11] b[12] b[13] b[14] b[15] b[1] b[2] b[3] b[4] b[5] b[6] b[7] b[8] b[9] cin 
+
+.outputs cout s[0] s[10] s[11] s[12] s[13] s[14] s[15] s[1] s[2] s[3] s[4] s[5] s[6] s[7] s[8] s[9] 
+
+.names ZERO
+
+.names sAB[15] scin_AorB[15] cout
+-1 1
+1- 1
+
+.names a[0] b[0] sAB[0]
+11 1
+
+.names a[10] b[10] sAB[10]
+11 1
+
+.names a[11] b[11] sAB[11]
+11 1
+
+.names a[12] b[12] sAB[12]
+11 1
+
+.names a[13] b[13] sAB[13]
+11 1
+
+.names a[14] b[14] sAB[14]
+11 1
+
+.names a[15] b[15] sAB[15]
+11 1
+
+.names a[1] b[1] sAB[1]
+11 1
+
+.names a[2] b[2] sAB[2]
+11 1
+
+.names a[3] b[3] sAB[3]
+11 1
+
+.names a[4] b[4] sAB[4]
+11 1
+
+.names a[5] b[5] sAB[5]
+11 1
+
+.names a[6] b[6] sAB[6]
+11 1
+
+.names a[7] b[7] sAB[7]
+11 1
+
+.names a[8] b[8] sAB[8]
+11 1
+
+.names a[9] b[9] sAB[9]
+11 1
+
+.names a[0] b[0] sAorB[0]
+-1 1
+1- 1
+
+.names a[10] b[10] sAorB[10]
+-1 1
+1- 1
+
+.names a[11] b[11] sAorB[11]
+-1 1
+1- 1
+
+.names a[12] b[12] sAorB[12]
+-1 1
+1- 1
+
+.names a[13] b[13] sAorB[13]
+-1 1
+1- 1
+
+.names a[14] b[14] sAorB[14]
+-1 1
+1- 1
+
+.names a[15] b[15] sAorB[15]
+-1 1
+1- 1
+
+.names a[1] b[1] sAorB[1]
+-1 1
+1- 1
+
+.names a[2] b[2] sAorB[2]
+-1 1
+1- 1
+
+.names a[3] b[3] sAorB[3]
+-1 1
+1- 1
+
+.names a[4] b[4] sAorB[4]
+-1 1
+1- 1
+
+.names a[5] b[5] sAorB[5]
+-1 1
+1- 1
+
+.names a[6] b[6] sAorB[6]
+-1 1
+1- 1
+
+.names a[7] b[7] sAorB[7]
+-1 1
+1- 1
+
+.names a[8] b[8] sAorB[8]
+-1 1
+1- 1
+
+.names a[9] b[9] sAorB[9]
+-1 1
+1- 1
+
+.names sAB[0] scin_AorB[0] sInternal_Cin[0]
+-1 1
+1- 1
+
+.names sAB[10] scin_AorB[10] sInternal_Cin[10]
+-1 1
+1- 1
+
+.names sAB[11] scin_AorB[11] sInternal_Cin[11]
+-1 1
+1- 1
+
+.names sAB[12] scin_AorB[12] sInternal_Cin[12]
+-1 1
+1- 1
+
+.names sAB[13] scin_AorB[13] sInternal_Cin[13]
+-1 1
+1- 1
+
+.names sAB[14] scin_AorB[14] sInternal_Cin[14]
+-1 1
+1- 1
+
+.names sAB[1] scin_AorB[1] sInternal_Cin[1]
+-1 1
+1- 1
+
+.names sAB[2] scin_AorB[2] sInternal_Cin[2]
+-1 1
+1- 1
+
+.names sAB[3] scin_AorB[3] sInternal_Cin[3]
+-1 1
+1- 1
+
+.names sAB[4] scin_AorB[4] sInternal_Cin[4]
+-1 1
+1- 1
+
+.names sAB[5] scin_AorB[5] sInternal_Cin[5]
+-1 1
+1- 1
+
+.names sAB[6] scin_AorB[6] sInternal_Cin[6]
+-1 1
+1- 1
+
+.names sAB[7] scin_AorB[7] sInternal_Cin[7]
+-1 1
+1- 1
+
+.names sAB[8] scin_AorB[8] sInternal_Cin[8]
+-1 1
+1- 1
+
+.names sAB[9] scin_AorB[9] sInternal_Cin[9]
+-1 1
+1- 1
+
+.names a[0] b[0] cin s[0]
+001 1
+010 1
+100 1
+111 1
+
+.names a[10] b[10] sInternal_Cin[9] s[10]
+001 1
+010 1
+100 1
+111 1
+
+.names a[11] b[11] sInternal_Cin[10] s[11]
+001 1
+010 1
+100 1
+111 1
+
+.names a[12] b[12] sInternal_Cin[11] s[12]
+001 1
+010 1
+100 1
+111 1
+
+.names a[13] b[13] sInternal_Cin[12] s[13]
+001 1
+010 1
+100 1
+111 1
+
+.names a[14] b[14] sInternal_Cin[13] s[14]
+001 1
+010 1
+100 1
+111 1
+
+.names a[15] b[15] sInternal_Cin[14] s[15]
+001 1
+010 1
+100 1
+111 1
+
+.names a[1] b[1] sInternal_Cin[0] s[1]
+001 1
+010 1
+100 1
+111 1
+
+.names a[2] b[2] sInternal_Cin[1] s[2]
+001 1
+010 1
+100 1
+111 1
+
+.names a[3] b[3] sInternal_Cin[2] s[3]
+001 1
+010 1
+100 1
+111 1
+
+.names a[4] b[4] sInternal_Cin[3] s[4]
+001 1
+010 1
+100 1
+111 1
+
+.names a[5] b[5] sInternal_Cin[4] s[5]
+001 1
+010 1
+100 1
+111 1
+
+.names a[6] b[6] sInternal_Cin[5] s[6]
+001 1
+010 1
+100 1
+111 1
+
+.names a[7] b[7] sInternal_Cin[6] s[7]
+001 1
+010 1
+100 1
+111 1
+
+.names a[8] b[8] sInternal_Cin[7] s[8]
+001 1
+010 1
+100 1
+111 1
+
+.names a[9] b[9] sInternal_Cin[8] s[9]
+001 1
+010 1
+100 1
+111 1
+
+.names cin sAorB[0] scin_AorB[0]
+11 1
+
+.names sInternal_Cin[9] sAorB[10] scin_AorB[10]
+11 1
+
+.names sInternal_Cin[10] sAorB[11] scin_AorB[11]
+11 1
+
+.names sInternal_Cin[11] sAorB[12] scin_AorB[12]
+11 1
+
+.names sInternal_Cin[12] sAorB[13] scin_AorB[13]
+11 1
+
+.names sInternal_Cin[13] sAorB[14] scin_AorB[14]
+11 1
+
+.names sInternal_Cin[14] sAorB[15] scin_AorB[15]
+11 1
+
+.names sInternal_Cin[0] sAorB[1] scin_AorB[1]
+11 1
+
+.names sInternal_Cin[1] sAorB[2] scin_AorB[2]
+11 1
+
+.names sInternal_Cin[2] sAorB[3] scin_AorB[3]
+11 1
+
+.names sInternal_Cin[3] sAorB[4] scin_AorB[4]
+11 1
+
+.names sInternal_Cin[4] sAorB[5] scin_AorB[5]
+11 1
+
+.names sInternal_Cin[5] sAorB[6] scin_AorB[6]
+11 1
+
+.names sInternal_Cin[6] sAorB[7] scin_AorB[7]
+11 1
+
+.names sInternal_Cin[7] sAorB[8] scin_AorB[8]
+11 1
+
+.names sInternal_Cin[8] sAorB[9] scin_AorB[9]
+11 1
+
+.end
